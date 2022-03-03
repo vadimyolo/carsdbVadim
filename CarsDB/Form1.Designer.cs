@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.listMark = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,9 +58,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(360, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "CarModelName";
+            this.label2.Text = "CarInGarage";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // listModel
@@ -74,6 +75,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listModel);
             this.Controls.Add(this.label2);
