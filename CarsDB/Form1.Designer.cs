@@ -65,11 +65,14 @@
             // 
             // listModel
             // 
+            this.listModel.BackColor = System.Drawing.Color.Yellow;
             this.listModel.FormattingEnabled = true;
             this.listModel.Location = new System.Drawing.Point(363, 65);
+            this.listModel.MultiColumn = true;
             this.listModel.Name = "listModel";
             this.listModel.Size = new System.Drawing.Size(249, 303);
             this.listModel.TabIndex = 3;
+            this.listModel.SelectedIndexChanged += new System.EventHandler(this.listMark_SelectedIndexChanged);
             // 
             // Form1
             // 
